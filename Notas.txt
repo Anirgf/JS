@@ -1,0 +1,90 @@
+**Comentar aula 06
+
+CSS: /*blablabla*/
+
+HTML: <!--blablabla-->
+
+JS: /*blablabla*/ e //blablabla....
+
+##########################################################################################################
+
+**Concatenar Usando o template String  aula 06
+
+inicia com crase (`${nome da variavel}`)
+
+#########################################################################################################
+ 
+**Nome dos Identificadores** aula 06
+
+*Podem começar com letras, $ ou _
+
+*Não podem começar com números
+
+*É possível usar letras ou números
+
+*É possivel usar acentos e símbolos
+
+*Não podem conter espaços
+
+*Não podem ser palavras reservadas
+
+**Dicas**
+ *Maiuscula e minúscula fazem diferença (ex: var a é diferente de var A)
+
+*Tente escolher nomes coerentes para as variáveis(ex: var salario, var idade)
+
+*Evite se tornar um 'programador alfabeto'(ex: var a, var b, var c) ou um 'programador contador'(ex: var n1,
+ var n2, var n3)
+
+###########################################################################################################
+
+**Data Types (Tipo de dados) aula 05
+
+--> typeof<-- identifica o tipo
+
+number (ex: var n = 200, var n = 6, var n = 6.5)
+
+string (ex: var n = "6.5", var n = "Google")
+
+boolean 
+
+null 
+
+undefined
+
+object
+
+function
+
+############################################################################################################
+
+** Converter Strig para Número aula 06
+
+Nunber(nome da variavel)
+
+Number.parseInt(nome variavel) Converte numeros inteiros, 5, 10, 5000 --> modo forçado 
+
+Number.parseFloat (nome variavel) Converte numeros decimais, 5.5, 10.3, 5000.2 --> modo forçado
+
+** Converter Número para String
+
+String(nome da variavel)
+
+nome da variavel.toString()
+
+##########################################################################################################
+
+** Formatando Strings aula 06
+
+nome da variavel.length (define quantos caracteres a string tem)
+
+nome da variavel.toUpperCase (define tudo em MAIUSCULO)
+
+nome da variavel.toLwerCase (define tudo em minusculo)
+
+nome da variavel.toFixed(2) (exibe 2 casas decimais)
+
+nome da variavel.toFixed(2).replace('.', ',') (exibe 2 casas decimais e converte ponto em virgula) 
+
+nome da variavel.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'}) (exibe valores com cifrão em rais ou dolar se usar USD)
+
