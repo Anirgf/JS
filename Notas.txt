@@ -1,44 +1,44 @@
-**Comentar aula 06
+Comentar aula 05
 
-CSS: /*blablabla*/
+CSS: /*blablabla*/ varias linhas
 
 HTML: <!--blablabla-->
 
-JS: /*blablabla*/ e //blablabla....
+JS: /*blablabla*/ varias linhas e //blablabla.... unica linha linhas 
 
 ##########################################################################################################
 
-**Concatenar Usando o template String  aula 06
+Concatenar Usando o template String  aula 06
 
 inicia com crase (`${nome da variavel}`)
 
 #########################################################################################################
  
-**Nome dos Identificadores** aula 06
+Nome dos Identificadores** aula 06
 
-*Podem começar com letras, $ ou _
+Podem comeï¿½ar com letras, $ ou _
 
-*Não podem começar com números
+Nï¿½o podem comeï¿½ar com nï¿½meros
 
-*É possível usar letras ou números
+ï¿½ possï¿½vel usar letras ou nï¿½meros
 
-*É possivel usar acentos e símbolos
+ï¿½ possivel usar acentos e sï¿½mbolos
 
-*Não podem conter espaços
+Nï¿½o podem conter espaï¿½os
 
-*Não podem ser palavras reservadas
+Nï¿½o podem ser palavras reservadas
 
-**Dicas**
- *Maiuscula e minúscula fazem diferença (ex: var a é diferente de var A)
+Dicas
+ Maiuscula e minï¿½scula fazem diferenï¿½a (ex: var a ï¿½ diferente de var A)
 
-*Tente escolher nomes coerentes para as variáveis(ex: var salario, var idade)
+Tente escolher nomes coerentes para as variï¿½veis(ex: var salario, var idade)
 
-*Evite se tornar um 'programador alfabeto'(ex: var a, var b, var c) ou um 'programador contador'(ex: var n1,
+Evite se tornar um 'programador alfabeto'(ex: var a, var b, var c) ou um 'programador contador'(ex: var n1,
  var n2, var n3)
 
 ###########################################################################################################
 
-**Data Types (Tipo de dados) aula 05
+Data Types (Tipo de dados) aula 06
 
 --> typeof<-- identifica o tipo
 
@@ -58,15 +58,15 @@ function
 
 ############################################################################################################
 
-** Converter Strig para Número aula 06
+Converter Strig para Nï¿½mero aula 06
 
 Nunber(nome da variavel)
 
-Number.parseInt(nome variavel) Converte numeros inteiros, 5, 10, 5000 --> modo forçado 
+Number.parseInt(nome variavel) Converte numeros inteiros, 5, 10, 5000 --> modo forï¿½ado 
 
-Number.parseFloat (nome variavel) Converte numeros decimais, 5.5, 10.3, 5000.2 --> modo forçado
+Number.parseFloat (nome variavel) Converte numeros decimais, 5.5, 10.3, 5000.2 --> modo forï¿½ado
 
-** Converter Número para String
+Converter Nï¿½mero para String
 
 String(nome da variavel)
 
@@ -74,7 +74,7 @@ nome da variavel.toString()
 
 ##########################################################################################################
 
-** Formatando Strings aula 06
+Formatando Strings aula 06
 
 nome da variavel.length (define quantos caracteres a string tem)
 
@@ -86,5 +86,90 @@ nome da variavel.toFixed(2) (exibe 2 casas decimais)
 
 nome da variavel.toFixed(2).replace('.', ',') (exibe 2 casas decimais e converte ponto em virgula) 
 
-nome da variavel.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'}) (exibe valores com cifrão em rais ou dolar se usar USD)
+nome da variavel.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'}) (exibe valores com cifrï¿½o em rais ou dolar se usar USD)
 
+#############################################################################################################################
+
+Aula 07 Operadores Parte 1 (AritmÃ©ticos e atribuiÃ§Ã£o)
+
+Aritmï¿½ticos binarios (depende de dois operandos, ex: 5+2) 
++ - * / % 
+
+** este ï¿½ potencia
+
+Cuidados
+5 + 3 / 2 = 6,5 (calcula primeiro a divisÃ£o 3/2 = 1.5 + 5 = 6,5)
+(5+3) / 2 = 4   (Calcula primeiro os parenteses 5 + 3  = 8 / 2 = 4)
+
+Orden de PrecedÃªncia
+1Âº ()
+2Âº **
+3Âº * / %
+4Âª + -
+
+Simplificando
+var n = 3
+n = n + 4  pode Simplificar deste modo n += 4, somente quando for a mesma 
+variavel no n
+O mesmo para
+n = n - 5   n -= 5
+n = n * 4   n *= 4
+n = n / 2   n /= 2
+n = n ** 2  n **= 2
+n = n % 5   n %= 5
+Grande maioria das linguagens aceita esta sintaxe
+
+Incremento
+var x = 5
+x = x + 1  x ++
+x = x - 1  x --
+
+#############################################################################
+
+Aula 08 Operadores Parte 2 (Relacionais, LÃ³gicos e TernÃ¡rio)
+
+Relacionais
+>    
+<
+>=
+<=
+==
+!=
+
+5 > 2  = true
+7 < 4  = false
+8 >= 8 = true
+9 <= 7 = false
+5 == 5 = true
+4 != 4 = false
+
+se for na mesma linha primeiro calcula os AritmÃ©ticos e depois os Relacionais
+
+LÃ³gicos
+!
+&&
+||
+
+!  negaÃ§Ã£o
+&& conjunÃ§Ã£o (e)  (binario, depende de dois resultados)
+|| disjunÃ§Ã£o (ou) (binario, depende de dois resultados)
+
+se for na mesma linha primeiro calcula os AritmÃ©ticos e depois os Relacionais e 
+depois os LÃ³gicos 
+
+Orden Ã© primeiro o ! (nÃ£o) depois o && (e) e por ultimo || (ou) se for na mesma linha 
+
+Orden de PrecedÃªncia
+1Âº AritmÃ©ticos () ** / ...
+2Âº Relacionais > < >=  ...
+3Âº LÃ³gicos ! && ||     ...  
+4Âº
+5Âº
+6Âº
+7Âº
+
+TernÃ¡rio
+?
+:
+teste ? true : false
+Ex: mÃ©dia >=7.0 ? "Aprovado" : "Reprovado"
