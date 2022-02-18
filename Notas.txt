@@ -163,13 +163,167 @@ Orden de Precedência
 1º Aritméticos () ** / ...
 2º Relacionais > < >=  ...
 3º Lógicos ! && ||     ...  
-4º
-5º
-6º
-7º
+
 
 Ternário
 ?
 :
 teste ? true : false
 Ex: média >=7.0 ? "Aprovado" : "Reprovado"
+
+####################################################################################
+
+Aula 09
+
+DOM (Document Object Model)
+
+Árvore DOM
+Elementos
+              window (janela)
+           /    |    \
+   location  document  history
+                |
+               html
+              /   \
+          head     body
+         /   \       |
+      meta  title    | 
+                   / /\ \
+                 h1 p  p div
+                       |
+                    strong
+
+Selecionando
+por Marca --> gerElementsByTagName() Seleciona mais de um objeto use o []
+por ID --> gerElementsById() Seleciona por ID
+por Nome --> gerElementsByName() Seleciona por Nome use o []
+por Classe --> gerElementsByClassName() Seleciona por Classe
+por Seletor --> querySelestor()  
+                querySelestorAll()
+quando for selecionar Classe use . e quando for ID usar #
+
+###################################################################################################################################
+
+Aula 10
+
+Eventos DOM
+
+      <DIV>
+mouseenter  mousemove
+mousedown   mouseup
+click       mouseout
+
+Event reference <---- site com refencias
+
+Funções (funciona com um bloco )
+function ação { (parametros)
+
+}
+
+Caso tiver algum erro no codigo não vai funcionar, é necessario inspecionar
+e verificar os erros com um x vermelho ao lado direito, ao clicar no erro 
+var exibir a o nome do arquivo e numero da linha 
+
+##################################################################################################################################
+
+Aula 11
+
+Condições
+
+if {
+
+}
+else{
+
+}
+Tipos de Condição
+simples
+if {
+
+}
+
+composta
+if {
+
+}
+else{
+
+}
+
+
+Sequência 
+
+##################################################################################################################################
+
+Aula 12
+
+Condições Aninhadas ( um if dentro de outro if)
+exemplo
+
+if(cond1){
+      bloco1
+}
+else{
+      if(cond2){
+            bloco2
+      }
+      else{
+            bloco3
+      }
+}
+
+Condição Múltipla (possibilidade de outros valores fixos)
+exemplo
+switch (expressão){
+      case valor 1:
+      ................
+      break
+      case valor 2:
+      ................
+      break
+      case valor 3:
+      ................
+      break
+      default:
+      ................
+      break
+}
+
+//break é obrigatório
+
+##################################################################################################################################
+
+Aula 13
+
+Repetições
+while (em quanto) com teste logico no inicio
+
+while (condição) {
+      bloco
+
+}
+fica repetindo enquanto a condição for verdadeira, quando for falsa sai do while
+
+do (faça) com teste logico no final
+
+do{
+      bloco
+}
+while (condição)
+fica fazendo o bloco enquanto a condição for verdadeira, quando for falsa sai do while
+
+##################################################################################################################################
+
+Aula 14
+
+for (quando) fica repetindo o teste logico e incrementando até o teste logico dar falso
+for(inicio; teste; incr){
+      bloco
+}
+
+exemplo
+
+var c=1;
+for(c=1; c<=10; c++){
+      bloco
+}
