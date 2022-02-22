@@ -358,8 +358,31 @@ num.sort() ---> ordena os elementos ou valores em ordem crescente
 num.indexOf() ---> busca valores dentro do vetor ou array
 
 
+##################################################################################################################################
+
+Aula 16
+
+Funções = rotinas
+
+são ações executadas assim que são chamadas ou em decorr^rncia de algum evento
+
+uma função pode receber parâmetros e retornar um resultado
+
+chamada --> parametro --> ação --> retorno
+nem toda função tem parametros
+nem toda função tem retorno
+
         
-
-
+         nome     parametro
+function parimpar(n){
+      if (n % 2 == 0){   --> ação
+            return 'par'
+            }
+            else{
+                  return 'Ímpar' --> retorno
+            }
+}
+let res = parimpar(11)
+          chamada
 
 
