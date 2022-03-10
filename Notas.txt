@@ -385,4 +385,31 @@ function parimpar(n){
 let res = parimpar(11)
           chamada
 
+##################################################################################################################################
 
+Aula 17
+
+Fundamentos
+Variáveis e dados
+Operadores
+Condições
+Repetições
+Array
+Function
+DOM
+
+HTML5
+functions
+objectos
+modularização
+RegEx
+jSON
+AJAX
+NodejS
+
+Objecto
+let amigo = {nome:´José´,sexo:´M´, peso:85.4, engordar(p){} }
+
+            amigo
+            |José | M  | 85.4 | [function] |
+             nome  sexo  peso   engordar{}
